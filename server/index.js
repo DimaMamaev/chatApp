@@ -9,6 +9,14 @@ const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
 
+//Real-time connection/disconnection
+io.on("connection", (socket) => {
+  console.log("new connection detected");
+  socket.on("disconnect", () => {
+    console.log("user had left");
+  });
+});
+
 app.use(router);
 
 server.listen(PORT, () =>
