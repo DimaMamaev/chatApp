@@ -12,14 +12,12 @@ export const Join = () => {
           type="text"
           className="form-control"
           placeholder="Name"
-          value={name}
           onChange={(event) => setName(event.target.value)}
         />
         <input
           type="text"
           className="form-control"
           placeholder="Room"
-          value={room}
           onChange={(event) => setRoom(event.target.value)}
         />
         <Link

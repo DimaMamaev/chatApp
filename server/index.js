@@ -12,6 +12,11 @@ const io = socketio(server);
 //Real-time connection/disconnection
 io.on("connection", (socket) => {
   console.log("new connection detected");
+  socket.on("join", ({ name, room }, callback) => {
+    console.log(name, room);
+    callback();
+  });
+
   socket.on("disconnect", () => {
     console.log("user had left");
   });
