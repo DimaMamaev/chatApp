@@ -11,7 +11,7 @@ export const Chat = ({ location }) => {
   const [room, setRoom] = useState("");
   const [messages, setMessages] = useState([]);
   const [message, setMessage] = useState("");
-  const ENDPOINT = "localhost:5000";
+  const ENDPOINT = "https://react-chat-app-mamaev.herokuapp.com/";
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
     setRoom(room);

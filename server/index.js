@@ -8,7 +8,10 @@ const { addUser, removeUser, getUser, getUsersInRoom } = require("./users");
 const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
+const cors = require("cors");
 
+app.use(router);
+app.use(cors());
 //Real-time connection/disconnection
 io.on("connection", (socket) => {
   socket.on("join", ({ name, room }, callback) => {
@@ -45,13 +48,11 @@ io.on("connection", (socket) => {
     if (user) {
       io.to(user.room).emit("message", {
         user: "admin",
-        text: `${user.name} has left chat room`,
+        text: `${user.name} has left chat room....`,
       });
     }
   });
 });
-
-app.use(router);
 
 server.listen(PORT, () =>
   console.log(`Server has been started on port ${PORT}`)
