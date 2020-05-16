@@ -40,7 +40,7 @@ export const Chat = ({ location }) => {
   return (
     <div className="jumbotron jumbotron-fluid chat">
       <ChatBar room={room} />
-      <ChatMessages />
+      <ChatMessages messages={messages} name={name} />
       <ChatInput
         sendMessage={sendMessage}
         message={message}

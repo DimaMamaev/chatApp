@@ -1,7 +1,7 @@
 .chat__bar {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(0, 183, 255);
+  background-color: #007bff;
   padding: 10px;
 }
 .bar__left {
