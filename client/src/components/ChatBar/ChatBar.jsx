@@ -5,7 +5,8 @@ import "./ChatBar.css";
 export const ChatBar = ({ room }) => (
   <section className="chat__bar">
     <div className="bar__left">
-      <i className="fas fa-plug" /> <h2 className="h3">Chat room: {room}</h2>
+      <i className="fas fa-plug" />{" "}
+      <h2 className="bar__title">Chat room: {room}</h2>
     </div>
     <div className="bar__right">
       <Link to="/">

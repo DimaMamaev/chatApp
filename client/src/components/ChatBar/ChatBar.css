@@ -3,6 +3,8 @@
   justify-content: space-between;
   background-color: #007bff;
   padding: 10px;
+  border-top-right-radius: 15px 15px;
+  border-top-left-radius: 15px 15px;
 }
 .bar__left {
   display: flex;
@@ -10,12 +12,12 @@
   align-items: center;
 }
 .fa-plug {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   color: rgb(0, 116, 0);
   margin-right: 10px;
 }
 .fa-times-circle {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   color: rgb(0, 0, 0);
   margin-right: 10px;
 }
@@ -23,4 +25,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.bar__title {
+  font-size: 15px;
+}
+
+@media (min-width: 768px) {
+  .fa-plug {
+    font-size: 1.8rem;
+  }
+  .fa-times-circle {
+    font-size: 1.8rem;
+  }
+  .bar__title {
+    font-size: 25px;
+  }
 }
