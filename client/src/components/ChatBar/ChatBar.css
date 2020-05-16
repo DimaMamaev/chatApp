@@ -1,0 +1,26 @@
+.chat__bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(0, 183, 255);
+  padding: 10px;
+}
+.bar__left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fa-plug {
+  font-size: 1.8rem;
+  color: rgb(0, 116, 0);
+  margin-right: 10px;
+}
+.fa-times-circle {
+  font-size: 1.8rem;
+  color: rgb(0, 0, 0);
+  margin-right: 10px;
+}
+.bar__right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
