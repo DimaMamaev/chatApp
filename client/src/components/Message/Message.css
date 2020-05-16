@@ -10,7 +10,18 @@
   border-radius: 10px;
   padding: 5px;
   background: #007bff13;
+  word-wrap: break-word;
+  max-width: 300px;
 }
 .message {
   align-items: center;
+  flex-wrap: wrap-reverse;
+}
+.message-user {
+  background: #003f8357;
+  border: 2px solid #0051a85b;
+  font-weight: bold;
+}
+.message-wrapper {
+  justify-content: flex-end;
 }
