@@ -11,6 +11,7 @@ export const Chat = ({ location }) => {
   const [room, setRoom] = useState("");
   const [messages, setMessages] = useState([]);
   const [message, setMessage] = useState("");
+
   const ENDPOINT = "https://react-chat-app-mamaev.herokuapp.com/";
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
@@ -35,7 +36,7 @@ export const Chat = ({ location }) => {
       socket.emit("sendMessage", message, () => setMessage(""));
     }
   };
-  console.log(message, messages);
+  console.log(name);
 
   return (
     <div className="jumbotron jumbotron-fluid chat">
